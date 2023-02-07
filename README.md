@@ -8,4 +8,6 @@
 - main.py: ~ in progress ~
 
 ## Part2: convert py to executable file for distribution
-- I want to share this wonderful tool to my friends so that we can save time together!
+- I want to share this wonderful tool to my friends so that we can save time too!
+
+## Part3: debugging note
