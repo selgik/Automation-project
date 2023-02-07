@@ -11,3 +11,7 @@
 - I want to share this wonderful tool to my friends so that we can save time too!
 
 ## Part3: debugging note
+- distributing exec file in Mac as "unidentified developer"
+- bad CPU in executable error 
+
+~ update in progress ~
