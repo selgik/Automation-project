@@ -4,7 +4,7 @@
 - This is not only repetitive but also manual process. Also, I make mistakes because sometimes I forget to set the alarm resulting in punching out late.
 - I want my codes to do these things for me.
 
-## Part1: writing automation(RPA) codes with Python vs AppleScript
+## Part1: writing codes
 - python_script.py: ~ in progress ~
 - apple_script.applescript: ~ in progress ~
 
