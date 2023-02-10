@@ -5,7 +5,8 @@
 - I want my codes to do these things for me.
 
 ## Part1: writing automation(RPA) codes with Python vs AppleScript
-- main.py: ~ in progress ~
+- python_script.py: ~ in progress ~
+- apple_script.applescript: ~ in progress ~
 
 ## Part2: converting scripts to executable app for distribution
 - I want to share this wonderful tool to my friends so that we can save time together!
