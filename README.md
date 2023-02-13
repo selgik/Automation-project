@@ -16,7 +16,7 @@
   - (2) input box will pop up, user enters their phone number 
   - (3) confirmation box will pop up, if user confirms their number, script will continue
   - (4) open necessary websites
-  - (5) send Message to user's phone number 1 min before clock-out
+  - (5) send Message to user's phone number 1 min before clock-out + bring app to in front for clock-out
   
 ## Part2: converting scripts to executable app for distribution
 - I want to share this wonderful tool to my friends so that we can save time together!
