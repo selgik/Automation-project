@@ -1,5 +1,6 @@
--- prerequisite: user needs to have iMessage logged in on Mac
--- for the first time, access-related alert message box may appear, click YES to allow
+-- PREREQUISITE: USER NEEDS TO HAVE Messages APP LOGGED IN ON THE MAC
+-- FOR THE FIRST TIME USE, ACCESS-RELATED ALERT WILL POP UP. CLICK YES TO ALLOW RPA.
+
 
 --1. OPEN APP TO RECORD TIME 
 --Note: App named "PUNCH" is not an actual app; just replace "PUNCH" with actual app you'd like to open
@@ -16,6 +17,7 @@ display dialog "Enter your phone number, if you want to get notification for clo
 set answer to text returned of result
 display dialog "Your phone number is: " & answer & ". I will remind you 1 min before clock out :)"
 
+
 --3. OPEN FREQUENTLY USED WEBSITES
 tell application "Safari"
 	activate
@@ -25,6 +27,7 @@ tell application "Safari"
 		tell window 1 to make new tab with properties {URL:theURL}
 	end repeat
 end tell
+
 
 --4. SEND MESSAGE TO USER TO REMIND OF CLOCK-OUT AND BRING "PUNCH" APP IN FRONT
 --Note: Msg will be sent after 8Hours 59minutes (1 min before clock-out, with 1H lunch)
