@@ -13,8 +13,8 @@
   - (6) remind user (send notification) 1 min before clock-out
 - apple_script.applescript:
   - (1) open app to clock in 
-  - (2) input box will pop up, user enters their phone number 
-  - (3) confirmation box will pop up, if user confirms their number, script will continue
+  - (2) input box pops up, user enters their phone number 
+  - (3) confirmation box pops up, script continues if user confirms number
   - (4) open necessary websites
   - (5) send Message to user's phone number 1 min before clock-out + bring app to in front for clock-out
   
