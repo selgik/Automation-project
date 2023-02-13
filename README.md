@@ -39,7 +39,7 @@
   - summary: TBU
 
 ## Part4: debugging notes
-- for debugging notes, check [main notes](https://github.com/selgik/Python-practice/blob/main/DEBUGGING_NOTE.md) under Python-practice
+- for debugging notes, check main [DEBUGGING_NOTE](https://github.com/selgik/Python-practice/blob/main/DEBUGGING_NOTE.md) under Python-practice
 
 
 ~ update in progress ~
