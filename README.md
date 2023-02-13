@@ -20,7 +20,14 @@
   
 ## Part2: converting scripts to executable app for distribution
 - I want to share this wonderful tool to my friends so that we can save time together!
-
+- python_script.py: 
+  - using PyInstaller, convert py script into app for distribution
+  - ```terminal
+    pyinstaller --windowed python_script.py
+    ``` 
+- apple_script.applescript:
+  - go to File > Export > File Format: Application
+  
 ## Part3: comparision - Python or AppleScript?
 
 ## Part4: debugging notes
