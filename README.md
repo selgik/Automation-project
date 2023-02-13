@@ -1,7 +1,7 @@
 # Motivation
 - I don't want to do repetitive tasks.
 - Every morning before I start working, I follow certain routine. (Ex) connect to VPN > clock-in (record time in) > open necessary websites > set alarm to clock-out (record time out)
-- This is not only repetitive but also manual process. Also, I make mistakes because sometimes I forget to set the alarm resulting in clocking out late. I want my codes to do these things for me.
+- This is not only repetitive but also manual process. And, I make mistakes because sometimes I forget to set the alarm resulting in clocking out late. I want my codes to do these things for me.
 
 ## Part1: writing codes
 - python_script.py: 
