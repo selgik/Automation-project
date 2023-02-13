@@ -30,7 +30,7 @@
   
 ## Part3: comparision - Python or AppleScript?
 - python_script.py: 
-  - code-wise: (pros) Python is popular language hence there is lot of reference resources. (cons) if you have PATH issue, it may take lot of time and energy to debug and fix to get final app. See 3.zsh: command not found [debugging note](https://github.com/selgik/Python-practice/blob/main/DEBUGGING_NOTE.md)
+  - code-wise: (pros) Python is popular language hence there is lot of reference resources. (cons) if you have PATH issue, it may take lot of time and energy to debug and fix to get final app. See 3.zsh: command not found [DEBUGGING_NOTE](https://github.com/selgik/Python-practice/blob/main/DEBUGGING_NOTE.md)
   - distribution-wise: in order to distribute app to the team, there is certain procedure I need to take as otherwise, teammate(end-user) will see the alert message *cannot be opened because it is from unidentified developer* . End-user can open the app anyway via [bypassing the security settings](https://support.apple.com/en-sg/guide/mac-help/mh40616/mac) but it is not recommended. Better to go through internal process of app verficiation. 
   - summary: app verification process is little bit complex, time consuming but it is good learning opportunity. Knowing how to securily distirbute python scripts will be helpful for the future usage.
 - apple_script.applescript:
