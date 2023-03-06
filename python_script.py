@@ -42,7 +42,7 @@ webbrowser.open("https://www.web5.com")
 
 def reminder():
     cmd = """
-    set time1 to (minutes of (current date)) + 535
+    set time1 to (current date) + (535 * minutes)
     repeat
 	delay 1
 	if minutes of (current date) = time1 then
@@ -65,7 +65,7 @@ print(reminder())
 
 def reminder2():
     cmd = """
-    set time2 to (minutes of (current date)) + 4
+    set time2 to (current date) + (4 * minutes)
     repeat
 	delay 1
 	if minutes of (current date) = time2 then
