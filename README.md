@@ -25,7 +25,7 @@
 - python scripts: 
   - using PyInstaller, convert py script into app for distribution
   - ```terminal
-    python -m PyInstaller --windowed python_script.py
+    python -m PyInstaller --windowed script.py
     ``` 
 - applescript:
   - go to File > Export > File Format: Application
