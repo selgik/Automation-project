@@ -17,15 +17,17 @@
   - (3) confirmation box pops up, script continues if user confirms number
   - (4) open necessary websites
   - (5) send Message to user's phone number 1 min before clock-out + bring app to in front for clock-out
+- pyscript(w_buttons).py:
+  - TBU
   
 ## Part2: converting scripts to executable app for distribution
 - I want to share this wonderful tool to my friends so that we can save time together!
-- python_script.py: 
+- python scripts: 
   - using PyInstaller, convert py script into app for distribution
   - ```terminal
     python -m PyInstaller --windowed python_script(run_to_autostart).py
     ``` 
-- apple_script.applescript:
+- applescript:
   - go to File > Export > File Format: Application
   
 ## Part3: comparision - Python or AppleScript?
@@ -37,6 +39,8 @@
   - code-wise: (pros) it feels like Mac-apps are responding faster than when using Python scripts (cons) less resources to refer to comparing to Python. Also, AppleScript is only working on MacOS
   - distribution-wise: TBU
   - summary: TBU
+- pyscript(w_buttons).py:
+  - TBU  
 
 ## Part4: debugging notes
 - for debugging notes, check main [DEBUGGING_NOTE](https://github.com/selgik/Python-practice/blob/main/DEBUGGING_NOTE.md) under Python-practice
