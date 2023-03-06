@@ -33,10 +33,10 @@ end tell
 --Note: Msg will be sent after 8Hours 59minutes (1 min before clock-out, with 1H lunch)
 --Note2: Below, two actions are happening simultaneously (send message + bring app in front) hence nested format is used.
 
--- [Outdated] set time1 to (minutes of (current date)) + 524
+-- [Outdated] set time1 to (minutes of (current date)) + 539
 -- [Reason**] if user goes out for lunch and computer goes to sleep mode, timer will stop resulting in inaccurate calculation.
 
-set time1 to (current date) + (524 * minutes)
+set time1 to (current date) + (539 * minutes)
 
 repeat
 	delay 1
