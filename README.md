@@ -5,6 +5,7 @@
 
 ## Part1: writing codes
 - pyscript(autostart).py: 
+  - by opening the script, below will automatically start
   - (1) open app to clock in 
   - (2) ask user if they recorded time, and if YES is clicked, start timer 
   - (3) close time recording app '
@@ -12,14 +13,20 @@
   - (5) remind user (send notification) 5 min before clock-out
   - (6) remind user (send notification) 1 min before clock-out
 - applescript(autostart).applescript:
+  - by opening the script, below will automatically start
   - (1) open app to clock in 
   - (2) input box pops up, user enters their phone number 
   - (3) confirmation box pops up, script continues if user confirms number
   - (4) open necessary websites
   - (5) send Message to user's phone number 1 min before clock-out + bring app to in front for clock-out
 - pyscript(w_buttons).py:
-  - TBU
-  
+  - by opening the script, user will have buttons to choose
+  ![tkinter_gui](https://user-images.githubusercontent.com/91002274/223154126-9eb0f987-9456-41ba-8d1b-7839512d3247.png)
+  - (1) button1: TBU
+  - (2) button2: TBU
+  - (3) button3: TBU
+
+
 ## Part2: converting scripts to executable app for distribution
 - I want to share this wonderful tool to my friends so that we can save time together!
 - python scripts: 
