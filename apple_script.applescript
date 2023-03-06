@@ -3,7 +3,7 @@
 
 
 --1. OPEN APP TO RECORD TIME 
---Note: App named "PUNCH" is not an actual app; just replace "PUNCH" with actual app you'd like to open
+--Note: "PUNCH" is not an actual app; just replace "PUNCH" with actual app you'd like to open
 tell application "PUNCH"
 	launch
 	activate
