@@ -7,7 +7,7 @@ import pyautogui
 #2. OPEN APP TO RECORD TIME 
 subprocess.call(["open", "-a", "PUNCH"])
 
-# Note: App named "PUNCH" is not an actual app; just replace "PUNCH" with actual app you'd like to open
+# Note: "PUNCH" is not an actual app; just replace "PUNCH" with actual app name you'd like to open
 
 
 #3. ASK IF USER HAS RECORDED TIME, BEFORE STARTING A TIMER 
