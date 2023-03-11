@@ -38,7 +38,7 @@
   - (1) Clock Reminder: by clicking this button, timer (preset ex. 9h) will start
   - (2) Lunch Reminder: by clicking this button, timer (preset ex. 1h) will start
   - (3) Web Opener: by clicking this button, pre-set websites will be opened in one window
-- button-to-start/pyscriptver2.py:
+- button-to-start/pyscriptv2.py:
   - by opening the script, user will have buttons to choose
   - (1) Your Clock Time: user types in their shirt start time (in HH:MM format)
   - (2) Your Lunch Time: user types in the minutes they took for lunch (in MM format)
