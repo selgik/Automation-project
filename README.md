@@ -11,44 +11,47 @@
 - button-to-start/pyscript.py:
   - by opening the script, user will have buttons to choose
   ![tkinter_gui](https://user-images.githubusercontent.com/91002274/223154126-9eb0f987-9456-41ba-8d1b-7839512d3247.png)
-  - (1) button1: TBU
-  - (2) button2: TBU
-  - (3) button3: TBU
+  - (1) button1: Clock Reminder
+  - (2) button2: Lunch Reminder
+  - (3) button3: Web Opener
 - button-to-start/pyscriptver2.py:
   - by opening the script, user will have form to fill in and buttons to choose
   ![v2](https://user-images.githubusercontent.com/91002274/224464991-49183392-3b60-440e-99b3-230a32ac24be.png)
-  - (1) form1: TBU
-  - (2) form2: TBU
-  - (3) button1: TBU
-  - (4) button2: TBU
-  - (5) button3: TBU
+  - (1) form1: Clock Time (in HH:MM format)
+  - (2) form2: Lunch Time (in MM format)
+  - (3) button1: Set Alarm
+  - (4) button2: Open URL
+  - (5) button3: Instructions
 
 ## Part2: Action Flow
 - launch-to-start/pyscript.py: 
-  - by opening the script, below will automatically start
-  - (1) open app to clock in 
-  - (2) ask user if they recorded time, and if YES is clicked, start timer 
-  - (3) close time recording app '
-  - (4) open necessary websites
-  - (5) remind user (send notification) 5 min before clock-out
-  - (6) remind user (send notification) 1 min before clock-out
+  - by opening the script, below events will automatically start
+  - (1) open app to clock in: user records their shift start time
+  - (2) notification pops up: ask user if they recorded time. If YES, start timer
+  - (3) close time recording app 
+  - (4) open necessary websites: pre-set websites will be opened in one window
+  - (5) send notification: remind user 5 min before clock-out
+  - (6) send notification: remind user 1 min before clock-out
 - launch-to-start/applescript.applescript:
   - by opening the script, below will automatically start
-  - (1) open app to clock in 
-  - (2) input box pops up, user enters their phone number 
+  - (1) open app to clock in: user records their shift start time 
+  - (2) input box pops up: user enters their phone number
+    * number can be saved in the script to prevent from typing in everyday *
   - (3) confirmation box pops up, script continues if user confirms number
   - (4) open necessary websites
   - (5) send Message to user's phone number 1 min before clock-out + bring app to in front for clock-out
 - button-to-start/pyscript.py:
   - by opening the script, user will have buttons to choose
-  ![tkinter_gui](https://user-images.githubusercontent.com/91002274/223154126-9eb0f987-9456-41ba-8d1b-7839512d3247.png)
   - (1) button1: TBU
   - (2) button2: TBU
   - (3) button3: TBU
 - button-to-start/pyscriptver2.py:
   - by opening the script, user will have buttons to choose
-  ![v2](https://user-images.githubusercontent.com/91002274/224464991-49183392-3b60-440e-99b3-230a32ac24be.png)
-
+  - (1) form1: TBU
+  - (2) form2: TBU
+  - (3) button1: TBU
+  - (4) button2: TBU
+  - (5) button3: TBU
 
 ## Part3: converting scripts to executable app for distribution
 - I want to share this wonderful tool to my friends so that we can save time together!
