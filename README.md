@@ -67,7 +67,7 @@
   - distribution-wise: Conversion process into app is more straightforward. However, like python app I need to take certain internal procedure to distribute app internally to the team at workplace. 
   - summary: app verification is simpler, responses seem to be faster especially for MacOS built-in Apps. However there is less room to be creative due to Applescript being inflexible comparing to Python having lots of packages options.
 
-## Part5: debugging notes
+## Part5: Debugging Notes
 - for debugging notes, check main [DEBUGGING_NOTE](https://github.com/selgik/Python-practice/blob/main/DEBUGGING_NOTE.md) under Python-practice
 
 
