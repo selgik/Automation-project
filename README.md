@@ -27,7 +27,7 @@
   - (3) button3: TBU
 - button-to-start/pyscriptver2.py:
   - by opening the script, user will have buttons to choose
-  ![ver2s](https://user-images.githubusercontent.com/91002274/224464898-d4bdf812-55ec-4cab-a48b-d09119c277fb.png)
+  ![v2](https://user-images.githubusercontent.com/91002274/224464991-49183392-3b60-440e-99b3-230a32ac24be.png)
 
 
 ## Part2: converting scripts to executable app for distribution
