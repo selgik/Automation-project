@@ -9,10 +9,10 @@
 - launch-to-start/applescript.applescript:
   - There is no GUI. By opening the script, sequence of events will automatically start
 - button-to-start/pyscript.py:
-  - by opening the script, user will have buttons to choose
+  - by opening the script, user will have buttons to use
  ![tkinter_gui](https://user-images.githubusercontent.com/91002274/223154126-9eb0f987-9456-41ba-8d1b-7839512d3247.png)
 - button-to-start/pyscriptver2.py:
-  - by opening the script, user will have form to fill in and buttons to choose
+  - by opening the script, user will have forms and buttons to use
  ![v2](https://user-images.githubusercontent.com/91002274/224464991-49183392-3b60-440e-99b3-230a32ac24be.png)
 
 ## Part2: Action Flow
