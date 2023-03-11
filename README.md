@@ -11,17 +11,9 @@
 - button-to-start/pyscript.py:
   - by opening the script, user will have buttons to choose
   ![tkinter_gui](https://user-images.githubusercontent.com/91002274/223154126-9eb0f987-9456-41ba-8d1b-7839512d3247.png)
-  - (1) button1: Clock Reminder
-  - (2) button2: Lunch Reminder
-  - (3) button3: Web Opener
 - button-to-start/pyscriptver2.py:
   - by opening the script, user will have form to fill in and buttons to choose
   ![v2](https://user-images.githubusercontent.com/91002274/224464991-49183392-3b60-440e-99b3-230a32ac24be.png)
-  - (1) form1: Clock Time (in HH:MM format)
-  - (2) form2: Lunch Time (in MM format)
-  - (3) button1: Set Alarm
-  - (4) button2: Open URL
-  - (5) button3: Instructions
 
 ## Part2: Action Flow
 - launch-to-start/pyscript.py: 
