@@ -4,7 +4,7 @@
 - This is not only repetitive but also manual process. And, I make mistakes because sometimes I forget to set the alarm resulting in clocking out late. I want my codes to do these things for me.
 
 ## Part1: writing codes
-- pyscript(autostart).py: 
+- launch-to-start/pyscript.py: 
   - by opening the script, below will automatically start
   - (1) open app to clock in 
   - (2) ask user if they recorded time, and if YES is clicked, start timer 
@@ -12,14 +12,14 @@
   - (4) open necessary websites
   - (5) remind user (send notification) 5 min before clock-out
   - (6) remind user (send notification) 1 min before clock-out
-- applescript(autostart).applescript:
+- launch-to-start/applescript.applescript:
   - by opening the script, below will automatically start
   - (1) open app to clock in 
   - (2) input box pops up, user enters their phone number 
   - (3) confirmation box pops up, script continues if user confirms number
   - (4) open necessary websites
   - (5) send Message to user's phone number 1 min before clock-out + bring app to in front for clock-out
-- pyscript(w_buttons).py:
+- button-to-start/pyscript.py:
   - by opening the script, user will have buttons to choose
   ![tkinter_gui](https://user-images.githubusercontent.com/91002274/223154126-9eb0f987-9456-41ba-8d1b-7839512d3247.png)
   - (1) button1: TBU
