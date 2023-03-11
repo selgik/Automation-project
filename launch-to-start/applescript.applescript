@@ -1,17 +1,19 @@
--- PREREQUISITE: USER NEEDS TO HAVE Messages APP LOGGED IN ON THE MAC
--- FOR THE FIRST TIME USE, ACCESS-RELATED ALERT WILL POP UP. CLICK YES TO ALLOW RPA.
+-- PREREQUISITE: USER NEEDS TO HAVE MESSAGES APP LOGGED IN ON THE MAC
+-- FOR THE FIRST TIME USE, ACCESS-RELATED ALERT MAY POP UP. CLICK YES TO ALLOW RPA.
 
 
 --1. OPEN APP TO RECORD TIME 
---Note: "PUNCH" is not an actual app; just replace "PUNCH" with actual app name you'd like to open
+--Note: "PUNCH" is not an actual app; replace "PUNCH" with actual app name you'd like to open
+--Note: User has to manually click or type "PUNCH" app. No mouse/keyboard action is added
 tell application "PUNCH"
 	launch
 	activate
 end tell
 
 
---2. USER INPUTS THEIR PHONE NUMBER TO GET NOTIFICATION.
+--2. USER INPUTS THEIR PHONE NUMBER TO GET NOTIFICATION
 --Note: tell me to activate --> this will bring a specified application or script to the front
+--Note: User has to manually type their phone number. Otherwise, number can be pre-saved in the script
 tell me to activate
 display dialog "Enter your phone number, if you want to get notification for clock-out" default answer "+65-"
 set answer to text returned of result
@@ -19,6 +21,7 @@ display dialog "Your phone number is: " & answer & ". I will remind you 1 min be
 
 
 --3. OPEN FREQUENTLY USED WEBSITES
+--Note: 5 URLs will be opened as tabs in one Safari window
 tell application "Safari"
 	activate
 	make new document
@@ -31,10 +34,10 @@ end tell
 
 --4. SEND MESSAGE TO USER TO REMIND OF CLOCK-OUT AND BRING "PUNCH" APP IN FRONT
 --Note: Msg will be sent after 8Hours 59minutes (1 min before clock-out, with 1H lunch)
---Note2: Below, two actions are happening simultaneously (send message + bring app in front) hence nested format is used.
+--Note2: Below, two actions will happen in sequence (send message > bring app in front) hence nested format is used.
 
 -- [Outdated] set time1 to (minutes of (current date)) + 539
--- [Reason**] if user goes out for lunch and computer goes to sleep mode, timer will stop resulting in inaccurate calculation.
+-- [Reason**] if user goes out for lunch and computer goes to sleep mode, timer will stop resulting in inaccurate calculation
 
 set time1 to (current date) + (539 * minutes)
 
