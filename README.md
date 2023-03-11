@@ -32,19 +32,20 @@
   - (3) confirmation box pops up: script continues if user confirms phone number
   - (4) open necessary websites: pre-set websites will be opened in one window
   - (5) send MSG to set phone number: message will be sent 1 min before clock-out.  
-        app to record clock-out will be automatically pop up in front too.
+  - (6) open app to clock out: user records their shift ending time 
 - button-to-start/pyscript.py:
   - by opening the script, user will have buttons to choose
-  - (1) button1: TBU
-  - (2) button2: TBU
-  - (3) button3: TBU
+  - (1) Clock Reminder: by clicking this button, timer (preset ex. 9h) will start
+  - (2) Lunch Reminder: by clicking this button, timer (preset ex. 1h) will start
+  - (3) Web Opener: by clicking this button, pre-set websites will be opened in one window
 - button-to-start/pyscriptver2.py:
   - by opening the script, user will have buttons to choose
-  - (1) form1: TBU
-  - (2) form2: TBU
-  - (3) button1: TBU
-  - (4) button2: TBU
-  - (5) button3: TBU
+  - (1) Your Clock Time: user types in their shirt start time (in HH:MM format)
+  - (2) Your Lunch Time: user types in the minutes they took for lunch (in MM format)
+  - (3) Set Alarm: by clicking this button, user will get alert when to clock-out
+        *notification will pop up after shirt start time + lunch time + 8h*
+  - (4) Open URL: by clicking this button, pre-set websites will be opened in one window
+  - (5) Instructions: by clicking this button, user will see another window containing texts with Next button 
 
 ## Part3: Converting Scripts Into Executable App For Distribution
 - I want to share this wonderful tool to my friends so that we can save time together!
