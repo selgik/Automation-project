@@ -10,11 +10,11 @@
   - There is no GUI. By opening the script, sequence of events will automatically start
 - button-to-start/pyscript.py:
   - by opening the script, user will have buttons to use  
- ![1wobg](https://user-images.githubusercontent.com/91002274/224491611-8aac656e-5aa0-489c-84f3-f075e6bde21e.png)
+  ![v1](https://user-images.githubusercontent.com/91002274/224491748-53b197d1-c49e-44d4-9598-708dbca0e6d7.png)
 
 - button-to-start/pyscriptver2.py:
   - by opening the script, user will have forms and buttons to use  
-  ![2wobg](https://user-images.githubusercontent.com/91002274/224491616-6593263a-5a0e-4521-8814-f0948d6f4d9b.png)
+  ![v2](https://user-images.githubusercontent.com/91002274/224491751-272c651b-da41-4e96-bd9f-53f02e3a8f81.png)
 
 ## Part2: Action Flow
 - launch-to-start/pyscript.py: 
