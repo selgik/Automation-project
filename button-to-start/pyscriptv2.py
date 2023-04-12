@@ -70,7 +70,7 @@ def on_closing():
 
 #5) def openURL(): opens URLs as tabs in one Safari window
 def openURL():
-    urls=["https://stdict.korean.go.kr/main/main.do","https://opendict.korean.go.kr/main","https://beta.music.apple.com/kr/browse","https://naver.com", "https://www.google.com"]
+    urls=["https://url1.com","https://url2.com","https://url3.com","https:url4.com", "https://url5.com"]
     for url in urls:
         webbrowser.open_new_tab(url)
  
