@@ -61,19 +61,16 @@ def lunch_submit():
 
     label_lstart = tk.Label(sub_window_global, text="Started (HH:MM)")
     label_lstart.pack()
-
     entry_lstart = tk.Entry(sub_window_global)
     entry_lstart.pack()
 
     label_lend = tk.Label(sub_window_global, text="Finished (HH:MM)")
     label_lend.pack()
-
     entry_lend = tk.Entry(sub_window_global)
     entry_lend.pack()
 
     lunch_gl_label = tk.Label(sub_window_global, text="Hit Enter to Calculate Time", fg="gray")
     lunch_gl_label.pack()
-
     l_result_label = tk.Label(sub_window_global, text="", fg="#009900")
     l_result_label.pack()
     entry_lend.bind("<Return>", lambda event: lunch_cal(entry_lstart, entry_lend, l_result_label))
@@ -250,22 +247,19 @@ root.title("Ops Helper")
 #4. Labels, Entries and Images
 label1 = tk.Label(root, text="Your Clock Time (HH:MM):")
 label1.pack()
-
 entry1 = tk.Entry(root)
 entry1.pack()
 
 label2 = tk.Label(root, text="Your Lunch Time (MM):")
 label2.pack()
-
 entry2 = tk.Entry(root)
 entry2.pack()    
-    
 entry2.bind("<Return>", lambda event: punch_calculator())
 
 result_label = tk.Label(root, text="", fg="#009900")
 result_label.pack()
 
-##images_list for "Troubleshoot" button: needs to be in the same directory as the app
+## images_list for "Troubleshoot" button: needs to be in the same directory as the app
 images_list = [
     tk.PhotoImage(file="t1.png"),
     tk.PhotoImage(file="t2.png"),
