@@ -166,8 +166,8 @@ def editURL():
         entry.pack()
         entries.append(entry)
 
-    # Function to add a new URL input field
-    def add_url_field():
+    # Create a new entry field above the "Add" and "Save" buttons
+    def create_new_field():
         new_entry = tk.Entry(sub_window_global)
         new_entry.pack()
         entries.append(new_entry)
@@ -182,15 +182,6 @@ def editURL():
             for url in urls:
                 f.write(url + "\n")
         sub_window_global.destroy()
-
-    # Create a new entry field above the "Add" and "Save" buttons
-    def create_new_field():
-        new_entry = tk.Entry(sub_window_global)
-        new_entry.pack()
-        entries.append(new_entry)
-        # Repack the "Add" and "Save" buttons to keep them at the bottom
-        add_button.pack(side=tk.BOTTOM)
-        save_button.pack(side=tk.BOTTOM)
 
     add_button = tk.Button(sub_window_global, text="Add", command=create_new_field)
     add_button.pack(side=tk.BOTTOM)
