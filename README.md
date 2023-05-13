@@ -3,7 +3,7 @@
 - Every morning before I start working, I follow certain routine. (Ex) connect to VPN > clock-in (record time in) > open necessary websites > set alarm to clock-out (record time out)
 - This is not only repetitive but also manual process. And, I make mistakes because sometimes I forget to set the alarm resulting in clocking out late. I want my codes to do these things for me.
 
-## Part1: GUI
+## Part1: GUI 
 - launch-to-start/pyscript.py: 
   - There is no GUI. By opening the script, sequence of events will automatically start
 - launch-to-start/applescript.applescript:
@@ -16,7 +16,37 @@
   - by opening the script, user will have forms and buttons to use  
   ![v2](https://user-images.githubusercontent.com/91002274/224491751-272c651b-da41-4e96-bd9f-53f02e3a8f81.png)
 
-## Part2: Action Flow
+- button-to-start/pyscriptver3.py:
+  - by opening the script, user will have forms and buttons to use  
+    <img width="188" alt="t3" src="https://github.com/selgik/RPA-project/assets/91002274/2f261f9b-85d0-44ce-8d7d-42697cf95ca8">
+
+
+  
+## Part2: Action Flow (listed in descending order of creationg date)
+- button-to-start/pyscriptv3.py:
+  - by opening the script, user will have buttons to choose
+  - (1) Your Clock Time: user types in their shift start time (in HH:MM format)
+  - (2) Your Lunch Time: user types in the minutes they took for lunch (in MM format) or click (3) 
+  - (3) Calculate Lunch: user types in lunch start and end time in HH:MM format and hit enter
+      - calculate lunch time will be auto-inputed into Your Lunch Time label in the main app 
+  - (4) Set Alarm: by clicking this button, user will get alert when to clock-out
+      - notification window will pop up with sound alert
+  - (5) Open URL: by clicking this button, saved websites will be opened in one window tab
+  - (6) Edit URL: by clicking this button, user can add/remove/edit URLs 
+  - (7) Troubleshoot: by clicking this button, user will see another window containing texts with Next button 
+- button-to-start/pyscriptv2.py:
+  - by opening the script, user will have buttons to choose
+  - (1) Your Clock Time: user types in their shift start time (in HH:MM format)
+  - (2) Your Lunch Time: user types in the minutes they took for lunch (in MM format)
+  - (3) Set Alarm: by clicking this button, user will get alert when to clock-out
+      - notification will pop up after shirt start time + lunch time + 8h
+  - (4) Open URL: by clicking this button, pre-set websites will be opened in one window
+  - (5) Instructions: by clicking this button, user will see another window containing texts with Next button 
+- button-to-start/pyscript.py:
+  - by opening the script, user will have buttons to choose
+  - (1) Clock Reminder: by clicking this button, timer (preset ex. 9h) will start
+  - (2) Lunch Reminder: by clicking this button, timer (preset ex. 1h) will start
+  - (3) Web Opener: by clicking this button, pre-set websites will be opened in one window
 - launch-to-start/pyscript.py: 
   - by opening the script, below events will automatically start
   - (1) open app to clock in: user records their shift start time
@@ -34,19 +64,6 @@
   - (4) open necessary websites: pre-set websites will be opened in one window
   - (5) send MSG to set phone number: message will be sent 1 min before clock-out.  
   - (6) open app to clock out: user records their shift ending time 
-- button-to-start/pyscript.py:
-  - by opening the script, user will have buttons to choose
-  - (1) Clock Reminder: by clicking this button, timer (preset ex. 9h) will start
-  - (2) Lunch Reminder: by clicking this button, timer (preset ex. 1h) will start
-  - (3) Web Opener: by clicking this button, pre-set websites will be opened in one window
-- button-to-start/pyscriptv2.py:
-  - by opening the script, user will have buttons to choose
-  - (1) Your Clock Time: user types in their shirt start time (in HH:MM format)
-  - (2) Your Lunch Time: user types in the minutes they took for lunch (in MM format)
-  - (3) Set Alarm: by clicking this button, user will get alert when to clock-out
-        *notification will pop up after shirt start time + lunch time + 8h*
-  - (4) Open URL: by clicking this button, pre-set websites will be opened in one window
-  - (5) Instructions: by clicking this button, user will see another window containing texts with Next button 
 
 ## Part3: Converting Scripts Into Executable App For Distribution
 - I want to share this wonderful tool to my friends so that we can save time together!
