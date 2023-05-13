@@ -3,21 +3,21 @@
 - Every morning before I start working, I follow certain routine. (Ex) connect to VPN > clock-in (record time in) > open necessary websites > set alarm to clock-out (record time out)
 - This is not only repetitive but also manual process. And, I make mistakes because sometimes I forget to set the alarm resulting in clocking out late. I want my codes to do these things for me.
 
-## Part1: GUI 
-- launch-to-start/pyscript.py: 
-  - There is no GUI. By opening the script, sequence of events will automatically start
-- launch-to-start/applescript.applescript:
-  - There is no GUI. By opening the script, sequence of events will automatically start
-- button-to-start/pyscript.py:
-  - by opening the script, user will have buttons to use  
+## Part1: GUI
+### Launch-To-Start type: 
+- User simply launches script and automation will be triggered
+- launch-to-start/pyscript.py: no GUI
+- launch-to-start/applescript.applescript: no GUI
+
+### Button-To-Start type: 
+- user can click button and trigger automation  
+- (1) button-to-start/pyscript.py:
   ![v1](https://user-images.githubusercontent.com/91002274/224491748-53b197d1-c49e-44d4-9598-708dbca0e6d7.png)
 
-- button-to-start/pyscriptver2.py:
-  - by opening the script, user will have forms and buttons to use  
+- (2) button-to-start/pyscriptver2.py:
   ![v2](https://user-images.githubusercontent.com/91002274/224491751-272c651b-da41-4e96-bd9f-53f02e3a8f81.png)
 
-- button-to-start/pyscriptver3.py:
-  - by opening the script, user will have forms and buttons to use  
+- (3) button-to-start/pyscriptver3.py:
     <img width="188" alt="t3" src="https://github.com/selgik/RPA-project/assets/91002274/2f261f9b-85d0-44ce-8d7d-42697cf95ca8">
 
 
