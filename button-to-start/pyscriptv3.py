@@ -125,8 +125,8 @@ def check_current_time(set_time):
                    "Time to Go Home!" 
                         """
             result = subprocess.run(['osascript', '-e', cmd], capture_output=True)
-            return result.stdout
             os.system("open -a 'Time'")
+            return result.stdout
             break
         time.sleep(1)
 
