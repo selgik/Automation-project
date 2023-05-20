@@ -64,7 +64,7 @@ User can click button to trigger automation
 ## Part2: Converting Scripts Into Executable App For Distribution
 I want to share this wonderful tool to my friends so that we can save time together!
 - python scripts: 
-  - [NEW] using py2app, convert py script into app for distribution: check py_to_app folder
+  - With py2app, convert py script into app for distribution. Check py_to_app folder for step-by-step guide.
   - With PyInstaller, convert py script into app for distribution. Type in the Terminal: python3 -m PyInstaller --windowed script.py
  
 - applescript:
