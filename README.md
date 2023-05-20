@@ -43,15 +43,22 @@ User can click button to trigger automation
 - button-to-start/pyscriptver3.py:
 - <img width="188" alt="t3" src="https://github.com/selgik/RPA-project/assets/91002274/2f261f9b-85d0-44ce-8d7d-42697cf95ca8">   
 
-  - (1) Your Clock Time: user types in their shift start time (in HH:MM format)
-  - (2) Your Lunch Time: user types in the minutes they took for lunch (in MM format) or click (3) 
-  - (3) Calculate Lunch: user types in lunch start and end time in HH:MM format and hit enter
+  - What's updated from button-to-start/pyscriptver2.py:
+  - (1) Calculate Lunch: sub-window will pop up, user types in lunch start and end time in HH:MM format and hit enter
       - calculate lunch time will be auto-inputed into Your Lunch Time label in the main app 
-  - (4) Set Alarm: by clicking this button, user will get alert when to clock-out
+  - (2) Set Alarm: by clicking this button, user will get alerted when to clock-out
       - notification window will pop up with sound alert
-  - (5) Open URL: by clicking this button, saved websites will be opened in one window tab
-  - (6) Edit URL: by clicking this button, user can add/remove/edit URLs 
-  - (7) Troubleshoot: by clicking this button, user will see another window containing texts with Next button 
+  - (3) Open URL: by clicking this button, saved websites will be opened in one window tab
+     - file.txt will be generated in the same directory from which web sites will be read/updated
+  - (4) Edit URL: by clicking this button, user can add/remove/edit URLs 
+  - (5) Troubleshoot: by clicking this button, user will see another window containing texts with Next button 
+
+- button-to-start/pyscriptver4.py:
+- <img width="188" alt="v4" src="https://github.com/selgik/Python-project/assets/91002274/c624694e-4a4a-4e3b-981d-84361a73a924"><img width="294" alt="st2" src="https://github.com/selgik/Python-project/assets/91002274/003eaef6-2124-408c-a64b-c0ceca7500a9">
+
+  - What's updated from button-to-start/pyscriptver3.py:
+  - (1) Troubleshoot button has been removed
+  - (2) Stopwatch has been added: sub-window will pop up where user can record times and sum them all up.
 
 
 ## Part2: Converting Scripts Into Executable App For Distribution
