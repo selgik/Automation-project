@@ -248,7 +248,7 @@ def stopwatch():
         total_sec_stopwatch = sum(sum_sec_list) % 60
 
         label_total_time = tk.Label(sub_window_global, \
-                                    text=f"In Total {total_min_stopwatch} minutes {total_sec_stopwatch} seconds",\
+                                    text=f"Total {total_min_stopwatch} minutes {total_sec_stopwatch} seconds",\
                                     fg="#009900")
         label_total_time.grid(row=label_row, column=0, columnspan=4)
                     
