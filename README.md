@@ -9,7 +9,6 @@ User simply launches script and automation will be triggered
 - launch-to-start/pyscript.py: no GUI
   - (1) open app to clock in: user records their shift start time 
   - (2) input box pops up: user enters their phone number to get notification
-      - number can be saved in the script to prevent from typing in in the future*
   - (3) confirmation box pops up: script continues if user confirms phone number
   - (4) open necessary websites: pre-set websites will be opened in one window
   - (5) send MSG to set phone number: message will be sent 1 min before clock-out.  
@@ -27,49 +26,49 @@ User simply launches script and automation will be triggered
 User can click button to trigger automation  
 - button-to-start/pyscript.py: 
 - ![v1](https://user-images.githubusercontent.com/91002274/224491748-53b197d1-c49e-44d4-9598-708dbca0e6d7.png)
-  - (1) Clock Reminder: by clicking this button, timer (preset ex. 9h) will start
-  - (2) Lunch Reminder: by clicking this button, timer (preset ex. 1h) will start
-  - (3) Web Opener: by clicking this button, pre-set websites will be opened in one window
+  - Clock Reminder: by clicking this button, timer (preset ex. 9h) will start
+  - Lunch Reminder: by clicking this button, timer (preset ex. 1h) will start
+  - Web Opener: by clicking this button, pre-set websites will be opened in one window
 
 - button-to-start/pyscriptver2.py:
 - ![v2](https://user-images.githubusercontent.com/91002274/224491751-272c651b-da41-4e96-bd9f-53f02e3a8f81.png)
-  - (1) Your Clock Time: user types in their shift start time (in HH:MM format)
-  - (2) Your Lunch Time: user types in the minutes they took for lunch (in MM format)
-  - (3) Set Alarm: by clicking this button, user will get alert when to clock-out
-      - notification will pop up after shirt start time + lunch time + 8h
-  - (4) Open URL: by clicking this button, pre-set websites will be opened in one window
-  - (5) Instructions: by clicking this button, user will see another window containing texts with Next button 
+  - Your Clock Time: user types in their shift start time (in HH:MM format)
+  - Your Lunch Time: user types in the minutes they took for lunch (in MM format)
+  - Set Alarm: by clicking this button, user will get alert when to clock-out
+  - Open URL: by clicking this button, pre-set websites will be opened in one window
+  - Instructions: by clicking this button, user will see another window containing texts with Next button 
 
 - button-to-start/pyscriptver3.py:
 - <img width="188" alt="t3" src="https://github.com/selgik/RPA-project/assets/91002274/2f261f9b-85d0-44ce-8d7d-42697cf95ca8">   
 
-  - What's updated from button-to-start/pyscriptver2.py:
-  - (1) Calculate Lunch: sub-window will pop up, user types in lunch start and end time in HH:MM format and hit enter
-      - calculate lunch time will be auto-inputed into Your Lunch Time label in the main app 
-  - (2) Set Alarm: by clicking this button, user will get alerted when to clock-out
-      - notification window will pop up with sound alert
-  - (3) Open URL: by clicking this button, saved websites will be opened in one window tab
-     - file.txt will be generated in the same directory from which web sites will be read/updated
-  - (4) Edit URL: by clicking this button, user can add/remove/edit URLs 
-  - (5) Troubleshoot: by clicking this button, user will see another window containing texts with Next button 
+  - Your Clock Time: user types in their shift start time (in HH:MM format)
+  - Your Lunch Time: user types in the minutes they took for lunch (in MM format)
+  - Calculate Lunch: sub-window will pop up, user types in lunch start and end time in HH:MM format and hit enter
+  - Set Alarm: by clicking this button, user will get alerted when to clock-out
+  - Open URL: by clicking this button, saved websites will be opened in one window tab
+  - Edit URL: by clicking this button, user can add/remove/edit URLs 
+  - Troubleshoot: by clicking this button, user will see another window containing texts with Next button 
 
 - button-to-start/pyscriptver4.py:
-- <img width="188" alt="v4" src="https://github.com/selgik/Python-project/assets/91002274/c624694e-4a4a-4e3b-981d-84361a73a924"><img width="294" alt="st2" src="https://github.com/selgik/Python-project/assets/91002274/003eaef6-2124-408c-a64b-c0ceca7500a9">
+- <img width="188" alt="v4" src="https://github.com/selgik/Python-project/assets/91002274/c624694e-4a4a-4e3b-981d-84361a73a924"><img width="240" alt="st2" src="https://github.com/selgik/Python-project/assets/91002274/003eaef6-2124-408c-a64b-c0ceca7500a9">
 
-  - What's updated from button-to-start/pyscriptver3.py:
-  - (1) Troubleshoot button has been removed
-  - (2) Stopwatch has been added: sub-window will pop up where user can record times and sum them all up.
+  - Your Clock Time: user types in their shift start time (in HH:MM format)
+  - Your Lunch Time: user types in the minutes they took for lunch (in MM format)
+  - Calculate Lunch: sub-window will pop up, user types in lunch start and end time in HH:MM format and hit enter
+  - Set Alarm: by clicking this button, user will get alerted when to clock-out
+  - Stopwatch has been added: sub-window will pop up where user can record times and sum them all up.
+  - Open URL: by clicking this button, saved websites will be opened in one window tab
+  - Edit URL: by clicking this button, user can add/remove/edit URLs 
 
 
 ## Part2: Converting Scripts Into Executable App For Distribution
-- I want to share this wonderful tool to my friends so that we can save time together!
+I want to share this wonderful tool to my friends so that we can save time together!
 - python scripts: 
-  - using PyInstaller, convert py script into app for distribution
-  - ```terminal
-    python -m PyInstaller --windowed script.py
-    ``` 
+  - [NEW] using py2app, convert py script into app for distribution: check convert_py_to_app folder
+  - With PyInstaller, convert py script into app for distribution. Type in the Terminal: python3 -m PyInstaller --windowed script.py
+ 
 - applescript:
-  - go to File > Export > File Format: Application
+  - Go to File > Export > File Format: Application
   
 ## Part3: Comparison - Python or AppleScript?
 - Python:
