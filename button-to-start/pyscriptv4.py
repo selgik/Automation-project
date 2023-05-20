@@ -45,7 +45,6 @@ def lunch_cal(entry_lstart, entry_lend, l_result_label):
             
         letime_str = entry_lend.get()
         e_hour, e_minute = map(int, letime_str.split(":"))
-        
         #allow user to type 1:15 instead of 13:15
         if e_hour < 7:
             e_hour +=12
@@ -101,19 +100,17 @@ def set_alarm():
 
     if result_label["text"] == "":
         punch_calculator()
-        
-    # no need for an "else" block
-    if result_label["text"] != "":
-
+    else:
         if alarm_thread and alarm_thread.is_alive():
             global running
             running = False
             alarm_thread.join()
+            punch_calculator()
 
-        set_time = result_label["text"][13:]
-        messagebox.showinfo("Confirmation", "Alarm set!")
-        alarm_thread = threading.Thread(target=check_current_time, args=(set_time,))
-        alarm_thread.start()
+    set_time = result_label["text"][13:]
+    messagebox.showinfo("Confirmation", "Alarm set!")
+    alarm_thread = threading.Thread(target=check_current_time, args=(set_time,))
+    alarm_thread.start()
 
 ## Function for "Set Alarm" button(purpose: ring alarm)
 def check_current_time(set_time):
@@ -129,11 +126,11 @@ def check_current_time(set_time):
                    "Time to Go Home!" 
                         """
             result = subprocess.run(['osascript', '-e', cmd], capture_output=True)
-            os.system("open -a 'Time'") #open 'Time' app for user to record clock-out time
+            os.system("open -a 'Time'")
             return result.stdout
             break
         time.sleep(1)
-        
+    
 ## Function for "Open URL" button
 def openURL():
     # Create a file to store URLs if it doesn't exist
@@ -284,13 +281,13 @@ root.title("Ops Helper")
 
 
 #4. Labels, Entries and Images
-label1 = tk.Label(root, text="Your Clock Time (HH:MM):")
+label1 = tk.Label(root, text="Your Punch Time (HH:MM)")
 label1.pack()
 
 entry1 = tk.Entry(root)
 entry1.pack()
 
-label2 = tk.Label(root, text="Your Lunch Time (MM):")
+label2 = tk.Label(root, text="Your Lunch Time (MM)")
 label2.pack()
 
 entry2 = tk.Entry(root)
@@ -318,7 +315,7 @@ button2.pack()
 button2_edit = tk.Button(root, width=10, text="Edit URL", command=editURL)
 button2_edit.pack()
 
-version_label = tk.Label(root, text="SylviaK-GUI-Proj-May2023", fg="gray")
+version_label = tk.Label(root, text="ver: test20230520", fg="gray")
 version_label.pack()
 
 root.mainloop()
