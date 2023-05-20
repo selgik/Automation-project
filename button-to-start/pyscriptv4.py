@@ -315,7 +315,7 @@ button2.pack()
 button2_edit = tk.Button(root, width=10, text="Edit URL", command=editURL)
 button2_edit.pack()
 
-version_label = tk.Label(root, text="ver: test20230520", fg="gray")
+version_label = tk.Label(root, text="Sylvia-GUI-prj-May2023", fg="gray")
 version_label.pack()
 
 root.mainloop()
