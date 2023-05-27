@@ -1,3 +1,8 @@
+# UPDATE: MAY 27, 2023
+### NOTE: BELOW INFORMATION IS WRONG. IN ORDER FOR USER TO RUN PYTHON SCRIPT, THEY WOULD ANYWAY HAVE TO INSTALL PYTHON IN THEIR MACHINE
+
+
+
 # What if you cannot distribute your scripts as application?
 ### Few Reasons
 - Application is great. End-user does not have to install anything but run the program!
