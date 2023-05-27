@@ -1,8 +1,11 @@
+#[TIP]check temp directory: print(tempfile.gettempdir())
+
 #1. Libraries
 from tkinter import messagebox
 import datetime
 import os
 import subprocess
+import tempfile
 import threading
 import time
 import tkinter as tk
@@ -134,28 +137,30 @@ def check_current_time(set_time):
 ## Function for "Open URL" button
 def openURL():
     # Create a file to store URLs if it doesn't exist
-    if not os.path.exists("ops_helper_urls.txt"):
-        with open("ops_helper_urls.txt", "w") as f:
+    file_path = os.path.join(tempfile.gettempdir(), "ops_helper_urls.txt")
+    if not os.path.exists(file_path):
+        with open(file_path, "w") as f:
             f.write("https://apple.com\n")
 
     # Read the URLs from the file
-    with open("ops_helper_urls.txt", "r") as f:
+    with open(file_path, "r") as f:
         urls = f.read().splitlines()
     for url in urls:
         webbrowser.open_new_tab(url)
 
-## Function for "Edit URL" button
+# Function for "Edit URL" button
 def editURL():
     sub_window("Edit URL")
     lab_url1 = tk.Label(sub_window_global, text="Your URL(s)")
     lab_url1.pack()
-    
+
     # Read the URLs from the file and populate the input fields with them
-    if not os.path.exists("ops_helper_urls.txt"):
-        with open("ops_helper_urls.txt", "w") as f:
+    file_path = os.path.join(tempfile.gettempdir(), "ops_helper_urls.txt")
+    if not os.path.exists(file_path):
+        with open(file_path, "w") as f:
             f.write("https://apple.com\n")
 
-    with open("ops_helper_urls.txt", "r") as f:
+    with open(file_path, "r") as f:
         urls = f.read().splitlines()
 
     num_entries = len(urls)
@@ -179,14 +184,14 @@ def editURL():
     # Save the URLs entered by the user to the file
     def save_urls():
         urls = [entry.get() for entry in entries]
-        with open("ops_helper_urls.txt", "w") as f:
+        with open(file_path, "w") as f:
             for url in urls:
                 f.write(url + "\n")
         sub_window_global.destroy()
 
     add_button = tk.Button(sub_window_global, text="Add", command=create_new_field)
     add_button.pack(side=tk.BOTTOM)
-    
+
     save_button = tk.Button(sub_window_global, text="Save", command=save_urls)
     save_button.pack(side=tk.BOTTOM)
 
