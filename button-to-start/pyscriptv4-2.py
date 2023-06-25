@@ -1,4 +1,4 @@
-# Updated from pyscriptv4.py: 
+# Updated from pyscriptv4-1.py: 
 #     (1) added encoding so that user can still type in non-ENG characters under editURL()
 #     (2) when stopwatch is running, a text 'tictoc' will blink to indicate function is on
 #     (3) Help menu has been revised by adding a. Show Information b. Show Instruction c. Show Full Code
