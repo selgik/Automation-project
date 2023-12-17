@@ -1,4 +1,5 @@
 # How to convert python script to app using py2app
+## Documentation [Link](https://py2app.readthedocs.io/en/latest/command-line.html)
 ### 1. Install py2app with pip
 - On the terminal, type: pip3 install py2app
 
@@ -15,6 +16,6 @@ setup(
 ```
 
 ### 3. Run setup.py file
-- On the terminal, type: python3 setup.py py2app
+- On the terminal, type: python3 -m setup.py py2app
 - As a result of this conversion, (1) dist folder and (2) build folder will be generated
   - Under the dist folder, you can check executable app 
